@@ -38,7 +38,8 @@ extension FeedViewController {
   private func setupCollectionView() {
     collectionView.dataSource = self
     collectionView.delegate = self
-    collectionView.register(UICollectionViewCell.self)
+    collectionView.register(FeedViewCell<FeedCardView>.self)
+    collectionView.contentInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
   }
 }
 
@@ -48,11 +49,18 @@ extension FeedViewController:UICollectionViewDataSource {
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-    let cell = collectionView.dequeueCell(cellType: UICollectionViewCell.self, for: indexPath)
-    cell.backgroundColor = .green
+    let cell = collectionView.dequeueCell(cellType: FeedViewCell<FeedCardView>.self, for: indexPath)
+    cell.containerView.update(with: FeedCardViewModel(title: "lorem ipsum \(indexPath.item)"))
     return cell
   }
 
 }
 
-extension FeedViewController:UICollectionViewDelegate {}
+extension FeedViewController:UICollectionViewDelegateFlowLayout {
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    let ratio: CGFloat = 1.2
+    let width = collectionView.frame.width - collectionView.contentInset.left - collectionView.contentInset.right
+    let height = width * ratio
+    return CGSize(width: width, height: height)
+  }
+}
