@@ -20,6 +20,9 @@
 		4541CA4B27B8508F00097179 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541CA4A27B8508F00097179 /* FeedViewCell.swift */; };
 		4541CA4D27B8523200097179 /* FeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541CA4C27B8523200097179 /* FeedCardView.swift */; };
 		4541CA5027B8531C00097179 /* FeedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541CA4F27B8531C00097179 /* FeedCardViewModel.swift */; };
+		45A82E4627B93C62006F649C /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E4527B93C62006F649C /* Font.swift */; };
+		45A82E4827B93CD2006F649C /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E4727B93CD2006F649C /* Styles.swift */; };
+		45A82E4B27B93D03006F649C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E4A27B93D03006F649C /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		4541CA4A27B8508F00097179 /* FeedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
 		4541CA4C27B8523200097179 /* FeedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardView.swift; sourceTree = "<group>"; };
 		4541CA4F27B8531C00097179 /* FeedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardViewModel.swift; sourceTree = "<group>"; };
+		45A82E4527B93C62006F649C /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		45A82E4727B93CD2006F649C /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		45A82E4A27B93D03006F649C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		4541CA2027B839DE00097179 /* newzzie */ = {
 			isa = PBXGroup;
 			children = (
+				45A82E4927B93CF3006F649C /* Extensions */,
 				4541CA4527B84A3900097179 /* Helper */,
 				4541CA4227B83BB700097179 /* App */,
 				4541CA4427B8419A00097179 /* Modules */,
@@ -123,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				4541CA4727B84A5C00097179 /* ReuseIdentifier.swift */,
+				45A82E4527B93C62006F649C /* Font.swift */,
+				45A82E4727B93CD2006F649C /* Styles.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -142,6 +151,14 @@
 				4541CA4F27B8531C00097179 /* FeedCardViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		45A82E4927B93CF3006F649C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				45A82E4A27B93D03006F649C /* UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,13 +232,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4541CA3C27B83B6A00097179 /* FeedRouter.swift in Sources */,
+				45A82E4B27B93D03006F649C /* UIColor.swift in Sources */,
 				4541CA4D27B8523200097179 /* FeedCardView.swift in Sources */,
+				45A82E4827B93CD2006F649C /* Styles.swift in Sources */,
 				4541CA3D27B83B6A00097179 /* FeedViewController.swift in Sources */,
 				4541CA3F27B83B6A00097179 /* FeedInteractor.swift in Sources */,
 				4541CA3E27B83B6A00097179 /* FeedProtocols.swift in Sources */,
 				4541CA4027B83B6A00097179 /* FeedContainer.swift in Sources */,
 				4541CA4B27B8508F00097179 /* FeedViewCell.swift in Sources */,
 				4541CA3B27B83B6A00097179 /* FeedPresenter.swift in Sources */,
+				45A82E4627B93C62006F649C /* Font.swift in Sources */,
 				4541CA2227B839DE00097179 /* AppDelegate.swift in Sources */,
 				4541CA4827B84A5C00097179 /* ReuseIdentifier.swift in Sources */,
 				4541CA5027B8531C00097179 /* FeedCardViewModel.swift in Sources */,

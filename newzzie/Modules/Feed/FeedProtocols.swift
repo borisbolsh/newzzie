@@ -8,9 +8,11 @@ protocol FeedModuleOutput: AnyObject {
 }
 
 protocol FeedViewInput: AnyObject {
+  func set(viewModels: [FeedCardViewModel])
 }
 
 protocol FeedViewOutput: AnyObject {
+  func viewDidLoad()
 }
 
 protocol FeedInteractorInput: AnyObject {

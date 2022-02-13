@@ -4,6 +4,8 @@ final class FeedViewController: UIViewController {
   private let output: FeedViewOutput
   private let collectionView: UICollectionView
 
+  private var viewModels = [FeedCardViewModel]()
+
   init(output: FeedViewOutput) {
     self.output = output
     let collectionViewLayout = UICollectionViewFlowLayout()
@@ -24,6 +26,7 @@ final class FeedViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.output.viewDidLoad()
   }
 
   override func viewDidLayoutSubviews() {
@@ -32,6 +35,10 @@ final class FeedViewController: UIViewController {
 }
 
 extension FeedViewController: FeedViewInput {
+  func set(viewModels: [FeedCardViewModel]) {
+    self.viewModels = viewModels
+    self.collectionView.reloadData()
+  }
 }
 
 extension FeedViewController {
@@ -45,12 +52,13 @@ extension FeedViewController {
 
 extension FeedViewController:UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 10
+    return viewModels.count
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let viewModel = self.viewModels[indexPath.item]
     let cell = collectionView.dequeueCell(cellType: FeedViewCell<FeedCardView>.self, for: indexPath)
-    cell.containerView.update(with: FeedCardViewModel(title: "lorem ipsum \(indexPath.item)"))
+    cell.containerView.update(with: viewModel)
     return cell
   }
 
