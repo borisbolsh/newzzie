@@ -23,6 +23,13 @@
 		45A82E4627B93C62006F649C /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E4527B93C62006F649C /* Font.swift */; };
 		45A82E4827B93CD2006F649C /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E4727B93CD2006F649C /* Styles.swift */; };
 		45A82E4B27B93D03006F649C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E4A27B93D03006F649C /* UIColor.swift */; };
+		45A82E4D27B96819006F649C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E4C27B96819006F649C /* AppCoordinator.swift */; };
+		45A82E5027B9863D006F649C /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E4F27B9863D006F649C /* Localization.swift */; };
+		45A82E5327B98A88006F649C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E5227B98A88006F649C /* NetworkService.swift */; };
+		45A82E5527B99154006F649C /* NetworkServiceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E5427B99154006F649C /* NetworkServiceProtocols.swift */; };
+		45A82E5727B99228006F649C /* NetworkService+Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E5627B99228006F649C /* NetworkService+Articles.swift */; };
+		45A82E5927B9924F006F649C /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E5827B9924F006F649C /* URLFactory.swift */; };
+		45A82E5B27B998D8006F649C /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E5A27B998D8006F649C /* AppDependency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +51,13 @@
 		45A82E4527B93C62006F649C /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		45A82E4727B93CD2006F649C /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		45A82E4A27B93D03006F649C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		45A82E4C27B96819006F649C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		45A82E4F27B9863D006F649C /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		45A82E5227B98A88006F649C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		45A82E5427B99154006F649C /* NetworkServiceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocols.swift; sourceTree = "<group>"; };
+		45A82E5627B99228006F649C /* NetworkService+Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService+Articles.swift"; sourceTree = "<group>"; };
+		45A82E5827B9924F006F649C /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
+		45A82E5A27B998D8006F649C /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +90,7 @@
 		4541CA2027B839DE00097179 /* newzzie */ = {
 			isa = PBXGroup;
 			children = (
+				45A82E5127B98A67006F649C /* Network */,
 				45A82E4927B93CF3006F649C /* Extensions */,
 				4541CA4527B84A3900097179 /* Helper */,
 				4541CA4227B83BB700097179 /* App */,
@@ -121,6 +136,8 @@
 		4541CA4427B8419A00097179 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				45A82E4C27B96819006F649C /* AppCoordinator.swift */,
+				45A82E5A27B998D8006F649C /* AppDependency.swift */,
 				4541CA4127B83B7100097179 /* Feed */,
 			);
 			path = Modules;
@@ -132,6 +149,7 @@
 				4541CA4727B84A5C00097179 /* ReuseIdentifier.swift */,
 				45A82E4527B93C62006F649C /* Font.swift */,
 				45A82E4727B93CD2006F649C /* Styles.swift */,
+				45A82E4F27B9863D006F649C /* Localization.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -159,6 +177,17 @@
 				45A82E4A27B93D03006F649C /* UIColor.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		45A82E5127B98A67006F649C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				45A82E5227B98A88006F649C /* NetworkService.swift */,
+				45A82E5427B99154006F649C /* NetworkServiceProtocols.swift */,
+				45A82E5627B99228006F649C /* NetworkService+Articles.swift */,
+				45A82E5827B9924F006F649C /* URLFactory.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,19 +260,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A82E5527B99154006F649C /* NetworkServiceProtocols.swift in Sources */,
 				4541CA3C27B83B6A00097179 /* FeedRouter.swift in Sources */,
 				45A82E4B27B93D03006F649C /* UIColor.swift in Sources */,
 				4541CA4D27B8523200097179 /* FeedCardView.swift in Sources */,
 				45A82E4827B93CD2006F649C /* Styles.swift in Sources */,
 				4541CA3D27B83B6A00097179 /* FeedViewController.swift in Sources */,
+				45A82E5B27B998D8006F649C /* AppDependency.swift in Sources */,
+				45A82E5927B9924F006F649C /* URLFactory.swift in Sources */,
+				45A82E5327B98A88006F649C /* NetworkService.swift in Sources */,
 				4541CA3F27B83B6A00097179 /* FeedInteractor.swift in Sources */,
+				45A82E5027B9863D006F649C /* Localization.swift in Sources */,
 				4541CA3E27B83B6A00097179 /* FeedProtocols.swift in Sources */,
 				4541CA4027B83B6A00097179 /* FeedContainer.swift in Sources */,
 				4541CA4B27B8508F00097179 /* FeedViewCell.swift in Sources */,
 				4541CA3B27B83B6A00097179 /* FeedPresenter.swift in Sources */,
 				45A82E4627B93C62006F649C /* Font.swift in Sources */,
 				4541CA2227B839DE00097179 /* AppDelegate.swift in Sources */,
+				45A82E4D27B96819006F649C /* AppCoordinator.swift in Sources */,
 				4541CA4827B84A5C00097179 /* ReuseIdentifier.swift in Sources */,
+				45A82E5727B99228006F649C /* NetworkService+Articles.swift in Sources */,
 				4541CA5027B8531C00097179 /* FeedCardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

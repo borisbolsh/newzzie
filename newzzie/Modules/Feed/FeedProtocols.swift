@@ -16,9 +16,12 @@ protocol FeedViewOutput: AnyObject {
 }
 
 protocol FeedInteractorInput: AnyObject {
+  func loadArticles()
 }
 
 protocol FeedInteractorOutput: AnyObject {
+  func didEncounterError(_ error: Error)
+  func didLoad(_ articles: [Article])
 }
 
 protocol FeedRouterInput: AnyObject {
