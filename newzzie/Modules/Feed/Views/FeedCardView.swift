@@ -1,4 +1,5 @@
 import UIKit
+import Kingfisher
 
 class FeedCardView: UIView {
 
@@ -34,10 +35,10 @@ class FeedCardView: UIView {
     self.titleLabel.textColor = .white
 
     self.shortDescriptionLabel.font = Font.system(ofSize: 16, weight: .regular)
-    self.shortDescriptionLabel.textColor = UIColor.rgba(158, 158, 158)
+    self.shortDescriptionLabel.textColor = UIColor.rgba(205, 205, 205)
 
     self.viewDark.backgroundColor = .black
-    self.viewDark.layer.opacity = 0.4
+    self.viewDark.layer.opacity = 0.7
 
     self.imageView.contentMode = .scaleAspectFill
   }
@@ -76,7 +77,7 @@ class FeedCardView: UIView {
     self.infoLabel.text = viewModel.info
     self.titleLabel.text = viewModel.title
     self.shortDescriptionLabel.text = viewModel.shortDescription
-    self.imageView.image = UIImage(named: viewModel.imageName)
+    self.imageView.setImage(with: URL(string: viewModel.imageName))
     self.setNeedsLayout()
   }
 }

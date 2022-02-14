@@ -20,6 +20,7 @@
 		4541CA4B27B8508F00097179 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541CA4A27B8508F00097179 /* FeedViewCell.swift */; };
 		4541CA4D27B8523200097179 /* FeedCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541CA4C27B8523200097179 /* FeedCardView.swift */; };
 		4541CA5027B8531C00097179 /* FeedCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4541CA4F27B8531C00097179 /* FeedCardViewModel.swift */; };
+		459D747427BAD87E00C2CEF2 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459D747327BAD87E00C2CEF2 /* UIImageView.swift */; };
 		45A82E4627B93C62006F649C /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E4527B93C62006F649C /* Font.swift */; };
 		45A82E4827B93CD2006F649C /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E4727B93CD2006F649C /* Styles.swift */; };
 		45A82E4B27B93D03006F649C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E4A27B93D03006F649C /* UIColor.swift */; };
@@ -30,6 +31,7 @@
 		45A82E5727B99228006F649C /* NetworkService+Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E5627B99228006F649C /* NetworkService+Articles.swift */; };
 		45A82E5927B9924F006F649C /* URLFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E5827B9924F006F649C /* URLFactory.swift */; };
 		45A82E5B27B998D8006F649C /* AppDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A82E5A27B998D8006F649C /* AppDependency.swift */; };
+		D18A2C78977A02909269ECC7 /* Pods_newzzie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885F1AE16CBB75150D13C04F /* Pods_newzzie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,7 @@
 		4541CA4A27B8508F00097179 /* FeedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
 		4541CA4C27B8523200097179 /* FeedCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardView.swift; sourceTree = "<group>"; };
 		4541CA4F27B8531C00097179 /* FeedCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardViewModel.swift; sourceTree = "<group>"; };
+		459D747327BAD87E00C2CEF2 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		45A82E4527B93C62006F649C /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		45A82E4727B93CD2006F649C /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		45A82E4A27B93D03006F649C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -58,6 +61,9 @@
 		45A82E5627B99228006F649C /* NetworkService+Articles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkService+Articles.swift"; sourceTree = "<group>"; };
 		45A82E5827B9924F006F649C /* URLFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLFactory.swift; sourceTree = "<group>"; };
 		45A82E5A27B998D8006F649C /* AppDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependency.swift; sourceTree = "<group>"; };
+		885F1AE16CBB75150D13C04F /* Pods_newzzie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_newzzie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0BAC015B07AA61E36877480 /* Pods-newzzie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newzzie.debug.xcconfig"; path = "Target Support Files/Pods-newzzie/Pods-newzzie.debug.xcconfig"; sourceTree = "<group>"; };
+		D18E76A9E403EEE7EC1DF6D4 /* Pods-newzzie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newzzie.release.xcconfig"; path = "Target Support Files/Pods-newzzie/Pods-newzzie.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18A2C78977A02909269ECC7 /* Pods_newzzie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,8 @@
 			children = (
 				4541CA2027B839DE00097179 /* newzzie */,
 				4541CA1F27B839DE00097179 /* Products */,
+				C84C1807F93C65A56ED3FAD3 /* Pods */,
+				87C17073E154CE925C0EAD74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				45A82E4A27B93D03006F649C /* UIColor.swift */,
+				459D747327BAD87E00C2CEF2 /* UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -190,6 +200,23 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		87C17073E154CE925C0EAD74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				885F1AE16CBB75150D13C04F /* Pods_newzzie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C84C1807F93C65A56ED3FAD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0BAC015B07AA61E36877480 /* Pods-newzzie.debug.xcconfig */,
+				D18E76A9E403EEE7EC1DF6D4 /* Pods-newzzie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4541CA3227B839E100097179 /* Build configuration list for PBXNativeTarget "newzzie" */;
 			buildPhases = (
+				8EA1CEE59EF97FD5629F7859 /* [CP] Check Pods Manifest.lock */,
 				4541CA1A27B839DE00097179 /* Sources */,
 				4541CA1B27B839DE00097179 /* Frameworks */,
 				4541CA1C27B839DE00097179 /* Resources */,
+				512F61A0E60CB120FC66402C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +284,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		512F61A0E60CB120FC66402C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newzzie/Pods-newzzie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-newzzie/Pods-newzzie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-newzzie/Pods-newzzie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EA1CEE59EF97FD5629F7859 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-newzzie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4541CA1A27B839DE00097179 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -266,6 +337,7 @@
 				4541CA4D27B8523200097179 /* FeedCardView.swift in Sources */,
 				45A82E4827B93CD2006F649C /* Styles.swift in Sources */,
 				4541CA3D27B83B6A00097179 /* FeedViewController.swift in Sources */,
+				459D747427BAD87E00C2CEF2 /* UIImageView.swift in Sources */,
 				45A82E5B27B998D8006F649C /* AppDependency.swift in Sources */,
 				45A82E5927B9924F006F649C /* URLFactory.swift in Sources */,
 				45A82E5327B98A88006F649C /* NetworkService.swift in Sources */,
@@ -416,6 +488,7 @@
 		};
 		4541CA3327B839E100097179 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0BAC015B07AA61E36877480 /* Pods-newzzie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -444,6 +517,7 @@
 		};
 		4541CA3427B839E100097179 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D18E76A9E403EEE7EC1DF6D4 /* Pods-newzzie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
