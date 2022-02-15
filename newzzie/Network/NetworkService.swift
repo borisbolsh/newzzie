@@ -6,12 +6,7 @@ enum NetworkError: Error {
 }
 
 class NetworkService {
-  let urlFactory: URLFactory
 
-  init(urlFactory: URLFactory) {
-    self.urlFactory = urlFactory
-  }
-  
   func baseRequest<T: Decodable>(url: String, completion: @escaping (Result<T, Error>) -> Void) {
     guard let url = URL(string: url) else {
       completion(.failure(NetworkError.wrongUrl))

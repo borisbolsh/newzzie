@@ -71,4 +71,10 @@ extension FeedViewController:UICollectionViewDelegateFlowLayout {
     let height = width * ratio
     return CGSize(width: width, height: height)
   }
+
+  func collectionView(_ collectionView: UICollectionView,
+                      willDisplay cell: UICollectionViewCell,
+                      forItemAt indexPath: IndexPath) {
+      self.output.willDisplay(at: indexPath.item)
+  }
 }
